@@ -5,6 +5,8 @@ import IdentityAccess from './pages/IdentityAccess';
 import DeviceManagement from './pages/DeviceManagement';
 import SecurityDashboard from './pages/SecurityDashboard';
 import AwsCloud from './pages/AwsCloud';
+import SupportPage from './pages/SupportPage';
+import SupportBot from './components/SupportBot';
 
 function App() {
   return (
@@ -16,8 +18,10 @@ function App() {
           <Route path="devices" element={<DeviceManagement />} />
           <Route path="security" element={<SecurityDashboard />} />
           <Route path="aws" element={<AwsCloud />} />
+          <Route path="support" element={<SupportPage />} />
         </Route>
       </Routes>
+      <SupportBot />
     </Router>
   );
 }

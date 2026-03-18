@@ -1,5 +1,5 @@
 import { Outlet, NavLink, useLocation } from 'react-router-dom';
-import { Shield, Users, MonitorSmartphone, Cloud, LayoutDashboard, Bell, Search } from 'lucide-react';
+import { Shield, Users, MonitorSmartphone, Cloud, LayoutDashboard, Bell, Search, Headphones } from 'lucide-react';
 import clsx from 'clsx';
 
 const navItems = [
@@ -8,6 +8,7 @@ const navItems = [
   { path: '/devices', label: 'Device Management', icon: MonitorSmartphone },
   { path: '/security', label: 'Security Posture', icon: Shield },
   { path: '/aws', label: 'AWS Cloud', icon: Cloud },
+  { path: '/support', label: 'IT Support', icon: Headphones },
 ];
 
 export default function Layout() {
