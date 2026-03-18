@@ -5,5 +5,5 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: './', // Using relative paths for GitHub Pages compatibility
+  base: '/cloud-engineering-platform/', // Explicit base for GitHub Pages
 })
